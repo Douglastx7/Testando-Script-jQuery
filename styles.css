@@ -1,0 +1,52 @@
+
+
+.activeButton {
+    color: black;
+}
+
+.product_specification_content {
+    opacity: 0px;
+    visibility: hidden;
+    height: 0px;
+    transform: translate3d(-50px, 0,0);
+}
+
+
+.product_specification_content.activeDiv  {
+    opacity: 1px;
+    visibility: visible;
+    height: auto;
+    transition: 0.3s;
+    transform: translate3d(0px, 0,0);
+}
+
+/* --------------------------------  ACCORDION */
+
+
+.active_product {
+display: flex;
+justify-content: flex-start;
+border-top: 1px solid #ccc;
+text-transform: uppercase;
+cursor: pointer;
+padding: 10px 13px;
+font-size: 12px;
+position: relative;
+}
+
+
+.active_product::after {
+content: '';
+/* background: url('/arquivos/seta-preta.png'); */
+background-color: black;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+width: 15px;
+height: 15px;
+top: 20%;
+transform: translateY(-50%);
+right: 13px;
+transform: rotate(90deg);
+position: absolute;
+}
