@@ -14,5 +14,29 @@ $('.row_Top a').click(function (e) {
        $('.accordion_content').slideUp('auto');
        $('.active_product').click(function() {
           $('.active_product').toggleClass('ativarSeta');
+          const ativarSeta = $()
          $('.accordion_content').slideToggle('auto');
       });
+
+
+      // ========= ACORDION  specification__mobile
+
+
+      $('.accordion_content_specification_1').slideUp('auto');
+      $('.accordion_content_specification_2').slideUp('auto');
+      $('.accordion_content_specification_3').slideUp('auto');
+
+      $('.active_specification__mobile_1').click(function() {
+         $('.active_specification__mobile_1').toggleClass('ativarSeta_specification__mobile');
+        $('.accordion_content_specification_1').slideToggle('auto');
+     });
+
+     $('.active_specification__mobile_2').click(function() {
+        $('.active_specification__mobile_2').toggleClass('ativarSeta_specification__mobile');
+       $('.accordion_content_specification_2').slideToggle('auto');
+    });
+
+    $('.active_specification__mobile_3').click(function() {
+        $('.active_specification__mobile_3').toggleClass('ativarSeta_specification__mobile');
+       $('.accordion_content_specification_3').slideToggle('auto');
+    });

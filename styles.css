@@ -1,4 +1,8 @@
 
+p {
+    margin: 0;
+    padding: 0;
+}
 
 .activeButton {
     color: black;
@@ -8,45 +12,115 @@
     opacity: 0px;
     visibility: hidden;
     height: 0px;
-    transform: translate3d(-50px, 0,0);
+    transform: translate3d(-50px, 0, 0);
 }
 
 
-.product_specification_content.activeDiv  {
+.product_specification_content.activeDiv {
     opacity: 1px;
     visibility: visible;
     height: auto;
     transition: 0.3s;
-    transform: translate3d(0px, 0,0);
+    transform: translate3d(0px, 0, 0);
 }
 
 /* --------------------------------  ACCORDION */
 
 
 .active_product {
-display: flex;
-justify-content: flex-start;
-border-top: 1px solid #ccc;
-text-transform: uppercase;
-cursor: pointer;
-padding: 10px 13px;
-font-size: 12px;
-position: relative;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #ccc;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 13px;
+    font-size: 12px;
+    position: relative;
 }
 
 
 .active_product::after {
-content: '';
-/* background: url('/arquivos/seta-preta.png'); */
-background-color: black;
-background-size: auto;
-background-repeat: no-repeat;
-background-position: center;
-width: 15px;
-height: 15px;
-top: 20%;
-transform: translateY(-50%);
-right: 13px;
-transform: rotate(90deg);
-position: absolute;
+    content: '';
+    background: url('/arquivos/seta-preta.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    top: 20%;
+    transform: translateY(-50%);
+    right: 13px;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+
+.ativarSeta::after {
+    content: '';
+    background: url('/arquivos/seta-preta.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    top: 20%;
+    transform: translateY(-50%);
+    right: 13px;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+
+
+/* --------------------------------  ACCORDION  specificatio*/
+
+
+.active_specification {
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    background: #F8F8F8;
+    color: #000;
+    cursor: pointer;
+    padding: 13px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.accordion_content_mobile {
+    padding: 15px;
+}
+
+
+.active_specification::after {
+    content: '';
+   /* background: url('/arquivos/setaX.png'); */
+    background-color: rgb(255, 0, 0);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    top: 35%;
+    right: 13px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.ativarSeta_specification__mobile::after {
+    content: '';
+   /* background: url('/arquivos/setaX.png'); */
+    background-color: rgb(21, 255, 0);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    top: 35%;
+    right: 13px;
+    transform: rotate(180deg);
+    border-radius: 50%;
+    position: absolute;
 }
