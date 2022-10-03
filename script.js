@@ -40,3 +40,45 @@ $('.row_Top a').click(function (e) {
         $('.active_specification__mobile_3').toggleClass('ativarSeta_specification__mobile');
        $('.accordion_content_specification_3').slideToggle('auto');
     });
+
+
+   //  FUNCTION SLIDER
+
+   // $('.thumbs').slick({
+   //    infinite: true,
+   //    slidesToShow: 1,
+   //    slidesToScroll: 1,
+   //    lazyLoad: 'ondemand',
+   //    arrows: false,
+   //      dots: true,
+
+
+   //    responsive: [
+   //      {
+   //        breakpoint: 992,
+   //        settings: {
+   //          slidesToShow: 1,
+   //          slidesToScroll: 1,
+   //        }
+   //      },
+   //      {
+   //        breakpoint: 768,
+   //        settings: {
+   //          slidesToShow: 1,
+   //          slidesToScroll: 2,
+   //          centerMode: true,
+   //          adaptiveHeight: true,
+   //        },
+   //      },
+   //    ]
+   //  });
+
+ function teste() {
+
+   $('.thumbs').slick({
+   });
+
+ }
+
+ teste()
+  

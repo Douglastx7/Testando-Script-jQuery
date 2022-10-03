@@ -1,3 +1,9 @@
+a {
+   text-decoration: none;
+}
+li {
+   list-style: none;     
+}
 
 p {
     margin: 0;
@@ -123,4 +129,10 @@ p {
     transform: rotate(180deg);
     border-radius: 50%;
     position: absolute;
+}
+
+/* ------------------------------------ slider */
+
+.thumbs {
+     display: flex;
 }
