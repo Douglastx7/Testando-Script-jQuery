@@ -73,12 +73,31 @@ $('.row_Top a').click(function (e) {
    //    ]
    //  });
 
- function teste() {
+//  function teste() {
 
-   $('.thumbs').slick({
-   });
+//    $('.thumbs').slick({
+//    });
 
- }
+//  }
 
- teste()
+//  teste()
+
+// const teste = $(this).attr('src').replace('267x188','700x700')
+
   
+
+$('.thumbs li a img').each(function () { 
+
+   currentSrc = this.correntSrc;
+
+  
+      // const newUrl = this.currentSrc.replace('267x188','700x700');
+      $(this).attr("src",newUrl)
+   
+
+      console.log(this.correntSrc)
+
+     
+})
+
+
