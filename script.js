@@ -75,8 +75,14 @@ $('.row_Top a').click(function (e) {
 
 //  function teste() {
 
-//    $('.thumbs').slick({
-//    });
+   $('.thumbs').slick({
+      infinite: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         lazyLoad: 'ondemand',
+         arrows: false,
+           dots: true,
+   });
 
 //  }
 
@@ -86,7 +92,7 @@ $('.row_Top a').click(function (e) {
 
   
 
-$('.thumbs li a img').each(function () { 
+$('.thumbs').each(function () { 
 
    currentSrc = this.correntSrc;
 
